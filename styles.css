@@ -1,0 +1,76 @@
+/* Simple responsive gallery styles */
+:root{
+  --bg:#fafafa;
+  --card:#fff;
+  --accent:#111;
+  --muted:#666;
+  --gap:18px;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--accent);
+  line-height:1.4;
+  padding:28px;
+}
+
+header{
+  text-align:center;
+  margin-bottom:18px;
+}
+
+h1{margin:0 0 6px}
+p{margin:0;color:var(--muted)}
+
+.grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap:var(--gap);
+  max-width:1100px;
+  margin:22px auto;
+  padding:0 10px;
+}
+
+.card{
+  background:var(--card);
+  border-radius:10px;
+  padding:12px;
+  text-align:center;
+  text-decoration:none;
+  color:inherit;
+  box-shadow: 0 6px 18px rgba(20,20,20,0.05);
+  transition: transform .15s ease, box-shadow .15s ease;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+.card img{
+  width:100%;
+  height:auto;
+  max-width:260px;
+  border-radius:6px;
+  object-fit:cover;
+  margin-bottom:10px;
+}
+
+.card h2{
+  font-size:1rem;
+  margin:0;
+}
+
+.card:hover{
+  transform:translateY(-6px);
+  box-shadow: 0 12px 30px rgba(20,20,20,0.08);
+}
+
+footer{
+  text-align:center;
+  margin-top:28px;
+  color:var(--muted);
+  font-size:0.9rem;
+}
