@@ -12,7 +12,7 @@
 
 body{
   margin:0;
-  background:var(--bg);
+  background:#f5d6ff;
   color:var(--accent);
   line-height:1.4;
   padding:28px;
