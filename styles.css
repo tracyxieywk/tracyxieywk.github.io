@@ -13,7 +13,7 @@
 body{
   margin:0;
   background:#f5d6ff;
-  color:var(--accent);
+  color:#f5d6ff;
   line-height:1.4;
   padding:28px;
 }
